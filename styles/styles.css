@@ -23,18 +23,64 @@
 
 .logo{
 
+    display: flex;
+    justify-content: flex-start;
+    position: absolute;
     width: 68px;
     height: 31px;
     left: 110px;
     top: 20px;
+  /*  margin-top: 20px;*/   /*Почему лого не отталкивается сверху?*/
+    margin-left: 110px;
 
-    font-family: Raleway Arial sans-serif;
+    font-family: "Raleway", Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 30px;
     line-height: 35px;
 
-    color: #FFFFFF
+    color: #FFFFFF;
+    background-color: inherit;
+
+}
+
+.logo #p2{
+    color: #EC7979;
+    background-color: transparent;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+
+
+    background-color: inherit;
+    position: absolute;
+    width: 489px;
+    height: 20px;
+    left: 803px;
+    top: 25px;
+
+}
+
+nav >* {
+    background-color: inherit;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    text-transform: capitalize;
+    text-decoration: none;
+
+    color: rgba(255, 255, 255, 0.7)
+}
+
+nav >*:hover {
+    color: #EC7979;
 }
 
 .container{
