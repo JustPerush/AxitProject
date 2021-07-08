@@ -14,9 +14,16 @@
 }
 
 
+.container{
+    max-width: 1180px;
+    width:100%;
+    margin: 0 auto;
+}
+
+
 .main-header{
     margin: auto;
-    width:1400px;
+    width:100%;
     height: 70px;
    /* top: 0px;*/
    /* display: none;*/
@@ -28,13 +35,13 @@
 
  /*   display: flex;
     justify-content: flex-start;*/
-    position: absolute;
+    position: relative;
     width: 68px;
     height: 31px;
-    left: 110px;
+
     top: 20px;
   /*  margin-top: 20px;*/   /*Почему лого не отталкивается сверху?*/
-    margin-left: 110px;
+
 
     font-family: "Raleway", Arial, sans-serif;
     font-style: normal;
@@ -52,6 +59,8 @@
     background-color: transparent;
 }
 
+
+
 nav{
     display: flex;
     flex-direction: row;
@@ -64,7 +73,7 @@ nav{
     position: absolute;
     width: 489px;
     height: 20px;
-    left: 803px;
+    right: 110px;
     top: 25px;
 
 }
@@ -88,8 +97,8 @@ nav >*:hover {
 
 .main-background{
     margin: auto;
-/*    position: absolute;*/
-    width: 1400px;
+
+    width: 100%;
     height: 600px;
 /*    left: 0px;
     top: 0px;*/
@@ -104,8 +113,7 @@ nav >*:hover {
 
     position: absolute;
     width: 129px;
-    height: 70px;
-    left: 110px;
+    margin-left: 0;
     top: 108px;
 
     font-family: Roboto, Arial, sans-serif;
@@ -123,11 +131,11 @@ nav >*:hover {
 }
 
 .main-hero {
-    position: absolute;
+    position:relative;
     width: 544px;
-    height: 99px;
-    left: 110px;
+    /*left: 110px;*/
     top: 210px;
+    margin-left:0px;
 
     font-family: Raleway, Arial, sans-serif;
     font-style: normal;
@@ -149,8 +157,7 @@ nav >*:hover {
 .main-text{
     position: absolute;
     width: 282px;
-    height: 38px;
-    left: 110px;
+    margin-left: 0px;
     top: 380px;
 
     font-family: Raleway, Arial, sans-serif;
@@ -165,10 +172,10 @@ nav >*:hover {
 .main-download{
     background-color: Transparent;
     background-repeat:no-repeat;
+
     position: absolute;
     width: 135px;
-    height: 42px;
-    left: 110px;
+    margin-left: 0px;
     top: 457px;
 
     font-family: "Open Sans", Arial, sans-serif;
@@ -182,15 +189,19 @@ nav >*:hover {
 
     border: 1px solid #FFFFFF;
     box-sizing: border-box;
+    transition: color 0.5s ease;
 }
 
 .main-download:hover{
+
+    transform: scale(1.05);
+
     color: #EC7979;
 
     border: 1px solid #EC7979;
 }
 
-.container {
+.registr {
     position: absolute;
     width: 370px;
     height: 370px;
@@ -206,8 +217,8 @@ nav >*:hover {
     border-radius: 8px;
 }
 
-.container-logo{
-/*    position: absolute;
+.registr-logo{
+/*  position: absolute;
     width: 370px;
     height: 56px;
     left: 919px;
@@ -229,11 +240,11 @@ nav >*:hover {
 
 }
 
-.container-logo #p3{
+.registr-logo #p3{
     color: #EC7979;
 }
 
-.container-info{
+.registr-info{
 
 /*    box-sizing: border-box;
     border-bottom: 1px solid #BDBDBD;*/
@@ -256,7 +267,7 @@ nav >*:hover {
     color: #BDBDBD;
 }
 
-.container-button{
+.registr-button{
 /*    margin-top: 0px;
     margin-bottom:0px;*/
 
@@ -281,7 +292,7 @@ nav >*:hover {
     margin: auto;
 
 
-    width: 1400px;
+    width: 100%;
     height: 110px;
 /*    left: 0px;
     top: 670px;*/
@@ -290,11 +301,8 @@ nav >*:hover {
 }
 
 .socials-main{
-   /* position: absolute;
-    width: 125px;
-    height: 27px;
-    left: 111px;
-    top: 14px;*/
+    position: relative;
+    top: 14px;
 
     font-family: "Open Sans", Arial, sans-serif;
     font-style: normal;
@@ -308,11 +316,13 @@ nav >*:hover {
 }
 
 .socials-text{
-/*    position: absolute;
-    width: 365px;
-    height: 38px;
-    left: 111px;
-    top: 55px;*/
+    display: block;
+    margin: 0;
+    position: relative;
+    top: 20px;
+    max-width: 365px;
+    max-height: 38px;
+
 
     font-family: "Open Sans", Arial, sans-serif;
     font-style: normal;
@@ -339,8 +349,52 @@ nav >*:hover {
     top: 34px;
 }
 
-a img{
+.socials-icons > a img{
     border:none;
     height: 42px;
     width: 42px;
+}
+
+.footer-main{
+    margin: auto;
+
+
+    width: 100%;
+    height: 100px;
+
+    background: #000000;
+}
+
+.footer-icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    /*box-sizing: border-box;*/
+
+
+    background-color: inherit;
+
+    position: relative;
+    top: 30px;
+    max-width: 317px;
+}
+
+.footer-icons > a img{
+    height: 23px;
+    width: 23px;
+}
+
+.footer-span{
+    display: block;
+
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 12px;
+    text-align: center;
+
+    position: relative;
+    top: 43px;
+
+    color: rgba(255 ,255, 255, 0.5)
 }
