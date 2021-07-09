@@ -1,10 +1,8 @@
 @import "fonts.css";
 
-/*Прошу не стукать по голове, я совсем забыл про позиционирование*/
-
 
 *{
-    margin: auto;
+    margin: 0 auto;
     padding: 0;
     list-style-type: none;
     box-sizing: border-box;
@@ -21,26 +19,26 @@
 }
 
 
-.main-header{
-    margin: auto;
+
+.nav-header{
     width:100%;
     height: 70px;
-   /* top: 0px;*/
-   /* display: none;*/
 
     background: #000000;
 }
 
-.logo{
+/*nav-flex{
+    display: flex;
+    justify-content: space-between;
 
- /*   display: flex;
-    justify-content: flex-start;*/
+}*/
+
+.logo{
     position: relative;
     width: 68px;
     height: 31px;
-
     top: 20px;
-  /*  margin-top: 20px;*/   /*Почему лого не отталкивается сверху?*/
+    margin: 0;
 
 
     font-family: "Raleway", Arial, sans-serif;
@@ -64,25 +62,25 @@
 nav{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
-    padding: 0px;
+    margin: 0;
 
 
     background-color: inherit;
-    position: absolute;
-    width: 489px;
+    position: relative;
+    max-width: 489px;
     height: 20px;
-    right: 110px;
-    top: 25px;
+    bottom: 9px;
+    left: 693px;
 
 }
 
 nav >* {
+    margin: 0;
     background-color: inherit;
     font-family: "Open Sans", Arial, sans-serif;
-    font-style: normal;
-    font-weight: 600;
+
     font-size: 15px;
     line-height: 20px;
     text-transform: capitalize;
@@ -94,6 +92,8 @@ nav >* {
 nav >*:hover {
     color: #EC7979;
 }
+
+
 
 .main-background{
     margin: auto;
@@ -110,10 +110,7 @@ nav >*:hover {
 .main-logo{
   /*  margin-top:110px;
     margin-left:110px;*/
-
-    position: absolute;
-    width: 129px;
-    margin-left: 0;
+    position: relative;
     top: 108px;
 
     font-family: Roboto, Arial, sans-serif;
@@ -131,15 +128,15 @@ nav >*:hover {
 }
 
 .main-hero {
+    display: block;
     position:relative;
     width: 544px;
+    top: 141px;
     /*left: 110px;*/
-    top: 210px;
-    margin-left:0px;
+
+    margin-left:0;
 
     font-family: Raleway, Arial, sans-serif;
-    font-style: normal;
-    font-weight: normal;
     font-size: 36px;
     line-height: 42px;
 
@@ -155,13 +152,13 @@ nav >*:hover {
 }
 
 .main-text{
-    position: absolute;
+    margin: 0;
+    position: relative;
     width: 282px;
-    margin-left: 0px;
-    top: 380px;
+
+    top: 174px;
 
     font-family: Raleway, Arial, sans-serif;
-    font-style: normal;
     font-weight: 300;
     font-size: 16px;
     line-height: 19px;
@@ -172,14 +169,15 @@ nav >*:hover {
 .main-download{
     background-color: Transparent;
     background-repeat:no-repeat;
-
-    position: absolute;
+    display: block;
+    margin: 0;
+    position: relative;
+    top: 230px;
     width: 135px;
-    margin-left: 0px;
-    top: 457px;
+    height: 42px;
+
 
     font-family: "Open Sans", Arial, sans-serif;
-    font-style: normal;
     font-weight: 600;
     font-size: 15px;
     line-height: 20px;
@@ -201,57 +199,55 @@ nav >*:hover {
     border: 1px solid #EC7979;
 }
 
-.registr {
-    position: absolute;
-    width: 370px;
-    height: 370px;
-    left: 919px;
-    top: 110px;
+/*.registr-container{
+    display: block;
+    margin: 0;
+}*/
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.registr {
+    margin: 0;
+    display: block;
+
+    max-width: 370px;
+    height: 370px;
+
+    position: relative;
+    left: 809px;
+    bottom:154px;
+
 
     background: #FFFFFF;
     border-radius: 8px;
 }
 
 .registr-logo{
-/*  position: absolute;
-    width: 370px;
+    display: block;
+    text-align: center;
     height: 56px;
-    left: 919px;
-    top: 110px;*/
-    margin-top: 15px;
-    margin-bottom: 14px;
-
+    padding-top: 15px;
 
     font-family: "Open Sans", Arial, sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
     line-height: 27px;
-    display: flex;
-    align-items: center;
-    text-align: center;
 
     color: #333333;
 
 }
 
-.registr-logo #p3{
+/*.registr-logo #p3{
     color: #EC7979;
-}
+}*/
 
 .registr-info{
 
-/*    box-sizing: border-box;
-    border-bottom: 1px solid #BDBDBD;*/
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    box-sizing: border-box;
+    border-bottom: 1px solid #BDBDBD;
+    width: 200px;
+    display: block;
+    /*width: 370px;*/
+    padding: 44px 271px 16px 59px;
 
 
     font-family: "Open Sans", Arial, sans-serif;
@@ -261,15 +257,31 @@ nav >*:hover {
     line-height: 19px;
     /* identical to box height */
 
-/*    display: flex;
-    align-items: center;*/
 
     color: #BDBDBD;
 }
 
-.registr-button{
-/*    margin-top: 0px;
-    margin-bottom:0px;*/
+label input{
+    border: none;
+}
+
+/*
+label input::after{
+    content: '';
+    display: block;
+    width: 252px;
+    margin-top: 14px;
+    border-bottom: 1px solid #BDBDBD;
+}
+*/
+
+.registr__button{
+    display: block;
+    position: relative;
+    height: 54px;
+    width: 370px;
+    /*top: 14px;*/
+    margin-top: 61px;
 
     background: #EC7979;
     border: none;
@@ -277,18 +289,21 @@ nav >*:hover {
     padding: 19px 144px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+/*    display: inline-block;*/
 /*    line-height: 20px;*/
     font-size: 16px;
 
 }
 
-/*.container-button:hover{
+.registr-button__text{
 
-}*/
+}
 
 
 .socials{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin: auto;
 
 
@@ -301,6 +316,12 @@ nav >*:hover {
 }
 
 .socials-main{
+    display: block;
+    max-width: 365px;
+    max-height: 27px;
+
+    margin: 0;
+
     position: relative;
     top: 14px;
 
@@ -309,8 +330,8 @@ nav >*:hover {
     font-weight: bold;
     font-size: 20px;
     line-height: 27px;
-    display: flex;
-    align-items: center;
+/*    display: flex;
+    align-items: center;*/
 
     color: #333333;
 }
@@ -336,20 +357,25 @@ nav >*:hover {
 .socials-icons{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
-    padding: 0px;
+    margin: 0;
 
+    position: relative;
+    left: 495px;
+    bottom: 26px;
 
     background-color: inherit;
 
-    width: 684px;
-    height: 42px;
-    left: 605px;
-    top: 34px;
+    max-height: 42px;
+    max-width: 684px;
+
 }
 
+/*Почему маргин 0 в этом случае не убирает внешние отступы у элементов, в отличие от nav?*/
+
 .socials-icons > a img{
+    margin: 0;
     border:none;
     height: 42px;
     width: 42px;
