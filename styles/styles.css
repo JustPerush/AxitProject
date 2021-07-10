@@ -236,23 +236,22 @@ nav >*:hover {
 
 }
 
-/*.registr-logo #p3{
-    color: #EC7979;
-}*/
+.registr__container{
+    display: block;
+    margin: auto;
+    max-width:252px;
+}
 
-.registr-info{
+.registr__container label{
 
     box-sizing: border-box;
     border-bottom: 1px solid #BDBDBD;
-    width: 200px;
     display: block;
     /*width: 370px;*/
-    padding: 44px 271px 16px 59px;
+    padding: 35px 252px 19px 0px;
 
 
     font-family: "Open Sans", Arial, sans-serif;
-    font-style: normal;
-    font-weight: normal;
     font-size: 14px;
     line-height: 19px;
     /* identical to box height */
@@ -262,6 +261,9 @@ nav >*:hover {
 }
 
 label input{
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 19px;
     border: none;
 }
 
@@ -281,10 +283,11 @@ label input::after{
     height: 54px;
     width: 370px;
     /*top: 14px;*/
-    margin-top: 61px;
+    margin-top: 40px;
 
     background: #EC7979;
     border: none;
+    border-radius: 0px 0px 8px 8px;
     color: white;
     padding: 19px 144px;
     text-align: center;
@@ -295,7 +298,19 @@ label input::after{
 
 }
 
-.registr-button__text{
+.registr__button input{
+
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border:none;
+    color:white;
+
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+
 
 }
 
