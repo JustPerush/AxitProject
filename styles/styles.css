@@ -18,6 +18,7 @@
     margin: 0 auto;
 }
 
+/*--------------HEADER SECTION--------------*/
 
 
 .nav-header{
@@ -42,8 +43,6 @@
 
 
     font-family: "Raleway", Arial, sans-serif;
-    font-style: normal;
-    font-weight: normal;
     font-size: 30px;
     line-height: 35px;
 
@@ -94,6 +93,7 @@ nav >*:hover {
 }
 
 
+/*--------------MAIN SECTION--------------*/
 
 .main-background{
     margin: auto;
@@ -178,7 +178,6 @@ nav >*:hover {
 
 
     font-family: "Open Sans", Arial, sans-serif;
-    font-weight: 600;
     font-size: 15px;
     line-height: 20px;
     text-align: center;
@@ -200,6 +199,8 @@ nav >*:hover {
     display: block;
     margin: 0;
 }*/
+
+/*--------------REGISTR-CONTAINER IN-MAIN--------------*/
 
 .registr {
     margin: 0;
@@ -245,7 +246,7 @@ nav >*:hover {
     border-bottom: 1px solid #BDBDBD;
     display: block;
     /*width: 370px;*/
-    padding: 35px 252px 19px 0px;
+    padding: 35px 252px 19px 0;
 
 
     font-family: "Open Sans", Arial, sans-serif;
@@ -284,7 +285,7 @@ label input::after{
 
     background: #EC7979;
     border: none;
-    border-radius: 0px 0px 8px 8px;
+    border-radius: 0 0 8px 8px;
     color: white;
     padding: 19px 144px;
     text-align: center;
@@ -305,7 +306,7 @@ label input::after{
     color:white;
 
     font-family: "Open Sans", Arial, sans-serif;
-    font-weight: 600;
+/*    font-weight: 600;*/
     font-size: 15px;
     line-height: 20px;
     text-align: center;
@@ -315,6 +316,7 @@ label input::after{
     cursor: pointer;
 }
 
+/*--------------SOCIALS SECTION--------------*/
 
 .socials{
     display: flex;
@@ -362,8 +364,6 @@ label input::after{
 
 
     font-family: "Open Sans", Arial, sans-serif;
-    font-style: normal;
-    font-weight: normal;
     font-size: 14px;
     line-height: 19px;
 
@@ -397,6 +397,8 @@ label input::after{
     width: 42px;
 }
 
+/*--------------FOOTER SECTION--------------*/
+
 .footer-main{
     margin: auto;
 
@@ -428,6 +430,7 @@ label input::after{
     width: 23px;
 }
 
+
 .footer-span{
     display: block;
 
@@ -441,9 +444,12 @@ label input::after{
     color: rgba(255 ,255, 255, 0.5)
 }
 
+
+/*--------------FEATURES SECTION--------------*/
+
 .features__main-container{
     display:flex;
-    margin: 100px auto 100px;
+    margin: 110px auto 110px;
     max-width: 1180px;
     justify-content: space-between;
     box-sizing: border-box;
@@ -464,7 +470,6 @@ label input::after{
 
 
     font-family: "Open Sans", Arial, sans-serif;
-    font-weight: 600;
     font-size: 15px;
     line-height: 20px;
     text-align: center;
@@ -497,7 +502,7 @@ button:hover{
     margin-top: 10px;
     margin-bottom: 58px;
     font-family: "Open Sans", Arial, sans-serif;
-    font-weight: 600;
+    font-weight: bold;
     font-size: 20px;
     line-height: 27px;
     text-transform: uppercase;
@@ -521,7 +526,7 @@ button:hover{
     padding: 11px 27px 11px 25px;
 
     font-family: "Open Sans", Arial, sans-serif;
-    font-weigth:600;
+
     font-size: 15px;
     line-height: 20px;
     text-align: center;
@@ -544,5 +549,80 @@ button:hover{
     margin-left: 10px;
     width: 320px;
     height: 253px;
+}
+
+/*--------------OUR PROCESS SECTION--------------*/
+
+
+.process__main-container{
+    display: flex;
+    margin: 80px auto 110px;
+    max-width: 1180px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.process__head{
+    margin-top: 80px;
+    font-family: "Raleway", Arial, sans-serif;
+    font-size: 36px;
+    line-height: 42px;
+    text-transform: uppercase;
+
+    color: #212121;
+}
+
+.process__head::after{
+    content: '';
+    display: block;
+    width: 64px;
+    margin-top: 34px;
+    margin-left: 173px;
+    border-bottom: 1px solid #E72424;
+}
+
+.process__descr{
+    margin-top: 34px;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: capitalize;
+    color: #86878B;
+}
+
+.process__cards-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 68px 0 0;
+}
+
+.process__card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.process__card h4{
+    margin-top: 30px;
+    font-family: "Open Sans", Arial,sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    text-transform: capitalize;
+
+    color: #333333;
+}
+
+.process__card p{
+
+    margin: 10px 0;
+    max-width: 350px;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+
+    color: #000000;
 }
 
