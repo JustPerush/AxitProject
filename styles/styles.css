@@ -191,11 +191,8 @@ nav >*:hover {
 }
 
 .main-download:hover{
-
     transform: scale(1.05);
-
     color: #EC7979;
-
     border: 1px solid #EC7979;
 }
 
@@ -292,10 +289,12 @@ label input::after{
     padding: 19px 144px;
     text-align: center;
     text-decoration: none;
-/*    display: inline-block;*/
-/*    line-height: 20px;*/
     font-size: 16px;
 
+}
+
+.registr__button:hover{
+    cursor: pointer;
 }
 
 .registr__button input{
@@ -310,8 +309,10 @@ label input::after{
     font-size: 15px;
     line-height: 20px;
     text-align: center;
+}
 
-
+.registr__button input{
+    cursor: pointer;
 }
 
 
@@ -439,3 +440,109 @@ label input::after{
 
     color: rgba(255 ,255, 255, 0.5)
 }
+
+.features__main-container{
+    display:flex;
+    margin: 100px auto 100px;
+    max-width: 1180px;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.features__frame-container{
+    flex-direction: column;
+    margin-right: 69px;
+    max-width: max-content;
+}
+
+.features__frame-container button{
+    width: 112px;
+    padding: 45px 34px;
+    margin-top: 10px;
+
+    background: #333333;
+
+
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+    border: none;
+    border-radius: 4px;
+
+    transition: background 9999999s;
+}
+
+button:hover{
+    content:'';
+    cursor: pointer;
+}
+
+.features__frame-container button:active{
+    content: '';
+    background: #EC7979;
+    transition: background-color 0.5s ease;
+}
+
+.features__text-container{
+    max-width: 572px;
+}
+
+.features__head{
+    margin-top: 10px;
+    margin-bottom: 58px;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+
+.features__text{
+    margin-bottom: 75px;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+
+    color: #86878B;
+}
+
+.features__download{
+    background-color: #EC7979;
+
+    padding: 11px 27px 11px 25px;
+
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weigth:600;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    border: 1px solid #FFFFFF;
+    border-radius: 3px;
+    box-sizing: border-box;
+
+    transition: color 0.5s ease;
+}
+
+.features__download:hover{
+    transform: scale(1.05);
+}
+
+.features__main-container img{
+    display: block;
+    margin-left: 10px;
+    width: 320px;
+    height: 253px;
+}
+
