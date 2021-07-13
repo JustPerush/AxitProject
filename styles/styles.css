@@ -7,6 +7,7 @@
     list-style-type: none;
     box-sizing: border-box;
     outline: none;
+    font-family: "Open Sans", Arial,sans-serif;
 
     /*background-color: dimgrey;*/
 }
@@ -546,6 +547,7 @@ button:hover{
 
 .features__main-container img{
     display: block;
+    margin-top: 10px;
     margin-left: 10px;
     width: 320px;
     height: 253px;
@@ -595,6 +597,7 @@ button:hover{
     flex-direction: row;
     justify-content: space-between;
     margin: 68px 0 0;
+    align-items: flex-start;
 }
 
 .process__card{
@@ -626,3 +629,119 @@ button:hover{
     color: #000000;
 }
 
+
+/*--------------PRICES SECTION--------------*/
+
+
+.pricing{
+    background: #F5F5F5;
+}
+
+.pricing__main-container{
+    display: flex;
+    margin: 80px auto 60px;
+    max-width: 1180px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pricing__head{
+    margin-top: 80px;
+    width: 409px;
+    text-align: center;
+    font-family: "Raleway", Arial, sans-serif;
+    font-size: 36px;
+    line-height: 42px;
+    text-transform: uppercase;
+
+    color: #212121;
+}
+
+.pricing__head::after{
+    content: '';
+    display: block;
+    width: 64px;
+    margin-top: 34px;
+    margin-left: 173px;
+    border-bottom: 1px solid #E72424;
+}
+
+
+.pricing__descr{
+    margin-top: 34px;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: capitalize;
+    color: #86878B;
+}
+
+.pricing__table-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 62px auto 60px;
+    align-items: center;
+}
+
+.pricing__table-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.pricing__table{
+    display: block;
+    margin: 0 78px 0 0;
+}
+
+.second-table{
+    margin-bottom: 20px;
+}
+
+table{
+    font-family: "Open Sans", Arial,sans-serif;
+    text-align: center;
+    border-collapse: collapse;
+    border-spacing: 5px;
+    background: #FFFFFF;
+    border: 2px solid #F5F5F5;
+
+    font-size: 14px;
+    line-height: 19px;
+    color: #86878B;
+}
+
+th{
+    padding: 15px 140px 8px;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 20px;
+    line-height: 27px;
+    color: #FFFFFF;
+    background-color: #333333;
+}
+
+td{
+    background: #FFFFFF;
+    margin-bottom: 2px;
+    padding: 10px;
+    border: 2px solid #F5F5F5;
+}
+
+.price{
+    padding: 25px 144px;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 41px;
+    color: #FFFFFF;
+    background-color: #333333;
+}
+
+.offer{
+    background-color: #333333;
+}
+
+
+/*--------------NONAME SECTION--------------*/
