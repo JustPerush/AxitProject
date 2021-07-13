@@ -795,3 +795,122 @@ td{
     color: #EC7979;
     border: 1px solid #EC7979;
 }
+
+
+
+/*--------------TESTIMONIALS SECTION--------------*/
+
+
+.testimonials__main-container{
+    display: flex;
+    margin: 80px auto 60px;
+    max-width: 1180px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.testimonials__head{
+    width: 670px;
+    text-align: center;
+    font-family: "Raleway", Arial, sans-serif;
+    font-size: 36px;
+    line-height: 42px;
+    color: #212121;
+    text-transform: uppercase;
+}
+
+.testimonials__head:after{
+    content: '';
+    display: block;
+    width: 64px;
+    margin-top: 34px;
+    margin-left: 288px;
+    border-bottom: 1px solid #E72424;
+}
+
+.testimonials__descr{
+    margin-top: 34px;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: capitalize;
+    color: #86878B;
+}
+
+.testimonials__rewiews-container{
+    margin-top: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.testimonials__rewiew{
+    width: 300px;
+    text-align: center;
+    margin-right: 110px;
+}
+
+.testimonials__rewiew-msg{
+    width: 298px;
+    height: 110px;
+    background: #E2E2E2;
+    border-radius: 7px;
+    padding: 3px 20px;
+
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #86878B;
+}
+
+.testimonials__rewiew img{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.testimonials__rewiewer-person{
+    display: flex;
+    justify-content: space-between;
+}
+
+.testimonials__rewiewer{
+    display: block;
+    margin-top: 15px;
+    max-width: 100px;
+}
+
+.name{
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #333333;
+}
+
+.position{
+    margin-top: 12px;
+    margin-left: 36px;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 19px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+
+    color: #86878B
+}
+
+
+
+
