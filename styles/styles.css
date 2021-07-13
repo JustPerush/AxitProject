@@ -101,16 +101,16 @@ nav >*:hover {
 
     width: 100%;
     height: 600px;
-/*    left: 0px;
-    top: 0px;*/
 
     background: url("../images/background-1.jpg");
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));  /*чета фильтр не применяется(*/
+}
+
+.main-background__mask{
+    height: 600px;
+    background: rgba(0, 0, 0, 0.45);
 }
 
 .main-logo{
-  /*  margin-top:110px;
-    margin-left:110px;*/
     position: relative;
     top: 108px;
 
@@ -133,7 +133,6 @@ nav >*:hover {
     position:relative;
     width: 544px;
     top: 141px;
-    /*left: 110px;*/
 
     margin-left:0;
 
@@ -196,10 +195,6 @@ nav >*:hover {
     border: 1px solid #EC7979;
 }
 
-/*.registr-container{
-    display: block;
-    margin: 0;
-}*/
 
 /*--------------REGISTR-CONTAINER IN-MAIN--------------*/
 
@@ -266,22 +261,13 @@ label input{
     border: none;
 }
 
-/*
-label input::after{
-    content: '';
-    display: block;
-    width: 252px;
-    margin-top: 14px;
-    border-bottom: 1px solid #BDBDBD;
-}
-*/
+
 
 .registr__button{
     display: block;
     position: relative;
     height: 54px;
     width: 370px;
-    /*top: 14px;*/
     margin-top: 40px;
 
     background: #EC7979;
@@ -307,7 +293,6 @@ label input::after{
     color:white;
 
     font-family: "Open Sans", Arial, sans-serif;
-/*    font-weight: 600;*/
     font-size: 15px;
     line-height: 20px;
     text-align: center;
@@ -328,8 +313,6 @@ label input::after{
 
     width: 100%;
     height: 110px;
-/*    left: 0px;
-    top: 670px;*/
 
     background: #F8EFEF;
 }
@@ -349,8 +332,6 @@ label input::after{
     font-weight: bold;
     font-size: 20px;
     line-height: 27px;
-/*    display: flex;
-    align-items: center;*/
 
     color: #333333;
 }
@@ -389,7 +370,6 @@ label input::after{
 
 }
 
-/*Почему маргин 0 в этом случае не убирает внешние отступы у элементов, в отличие от nav?*/
 
 .socials-icons > a img{
     margin: 0;
@@ -415,9 +395,6 @@ label input::after{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-
-    /*box-sizing: border-box;*/
-
 
     background-color: inherit;
 
@@ -745,3 +722,76 @@ td{
 
 
 /*--------------NONAME SECTION--------------*/
+
+.nonamesec{
+    background: url("../images/background_noname_converted.jpg");
+    height: 325px;
+}
+
+.nonamesec__mask{
+    height: 325px;
+    background: rgba(0, 0, 0, 0.55);
+}
+
+.nonamesec__main-container{
+    display: flex;
+    margin: 60px auto 60px;
+    max-width: 1180px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nonamesec__head{
+    margin-top: 60px;
+    width: 448px;
+    text-align: center;
+    font-family: "Raleway", Arial, sans-serif;
+    font-size: 36px;
+    line-height: 42px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.nonamesec__head:after{
+    content: '';
+    display: block;
+    width: 64px;
+    margin-top: 34px;
+    margin-left: 191px;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.nonamesec__descr{
+    margin-top: 34px;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.nonamesec__download{
+    display: block;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    margin-top: 57px;
+    width: 135px;
+    height: 42px;
+
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    transition: color 0.5s ease;
+}
+
+.nonamesec__download:hover{
+    transform: scale(1.05);
+    color: #EC7979;
+    border: 1px solid #EC7979;
+}
