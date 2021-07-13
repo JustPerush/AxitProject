@@ -912,5 +912,49 @@ td{
 }
 
 
+/*--------------CONTACTUS SECTION--------------*/
 
+.contactus__main-container{
+    display: flex;
+    margin: 80px auto 110px;
+    max-width: 1180px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contactus__head{
+    font-family: "Raleway", Arial, sans-serif;
+    font-size: 36px;
+    line-height: 42px;
+    width: 409px;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #212121;
+}
+
+.contactus__head::after{
+    content: '';
+    display: block;
+    width: 64px;
+    margin-top: 34px;
+    margin-left: 173px;
+    border-bottom: 1px solid #E72424;
+}
+
+.contactus__descr{
+    margin-top: 34px;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: capitalize;
+    color: #86878B;
+}
+
+.contactus__data-container{
+    margin-top: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
