@@ -10,10 +10,10 @@
 </head>
 <body>
     <header class="nav-header">
-        <div class="container">
+        <div class="nav-header__main-container">
             <!--<div class="nav-flex">-->
-                <span class="logo">AX<span id="p1">IT</span></span>
-                <nav class="nav">
+                <span class="nav-header__logo">AX<span id="p1">IT</span></span>
+                <nav class="nav-header__nav">
                     <a href="#">Features</a>
                     <a href="#">About</a>
                     <a href="#">Prising</a>
@@ -26,15 +26,17 @@
 
     <main class="main-background">
         <div class="main-background__mask">
-        <div class="container">
-            <h1></h1>    <!---->
-            <span class="main-logo">AX<span id="p2">IT</span></span>
-            <h2 class="main-hero">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h2> <!--псевдоэлемент в качестве полоски-->
-            <p class="main-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean</p>
-            <button class="main-download">Download</button>
+        <div class="main__container">
+            <h1 class="visually-hidden">Modern axure tamplates</h1>
+            <div class="main__info">
+                <span class="main__logo">AX<span id="p2">IT</span></span>
+                <h2 class="main__hero">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h2> <!--псевдоэлемент в качестве полоски-->
+                <p class="main__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean</p>
+                <button class="main__download">Download</button>
+            </div>
             <!--<div class="registr-container">-->
-            <form class="registr">
-                <span class="registr-logo">Try Your Free<!--<span id="p3"> FREE </span>--> trial today</span>
+            <form class="main__registr">
+                <span class="registr__logo">Try Your Free<!--<span id="p3"> FREE </span>--> trial today</span>
                 <div class="registr__container">
                     <label ><input type="text" placeholder="Name"></label>
                     <label ><input type="email" placeholder="Email"></label>
@@ -240,10 +242,11 @@
                 </div>
                 <div class="contactus__msg">
                     <form>
-                        <input type="text" value="Message">
+                        <textarea class="contactus__txt" placeholder="Message"></textarea>
                     </form>
                 </div>
             </div>
+            <button class="contactus__button">Send Message</button>
         </div>
     </section>
     <footer class="footer-main">

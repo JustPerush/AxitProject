@@ -1,6 +1,5 @@
 @import "fonts.css";
 
-
 *{
     margin: 0 auto;
     padding: 0;
@@ -21,12 +20,20 @@
 
 /*--------------HEADER SECTION--------------*/
 
-
 .nav-header{
-    width:100%;
-    height: 70px;
-
     background: #000000;
+    height: 70px;
+}
+
+
+.nav-header__main-container{
+    display:flex;
+    margin: 0 auto;
+    max-width: 1180px;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
 }
 
 /*nav-flex{
@@ -35,48 +42,35 @@
 
 }*/
 
-.logo{
-    position: relative;
-    width: 68px;
-    height: 31px;
-    top: 20px;
+.nav-header__logo{
+    display: inline-block;
     margin: 0;
-
-
     font-family: "Raleway", Arial, sans-serif;
     font-size: 30px;
     line-height: 35px;
-
     color: #FFFFFF;
     background-color: inherit;
-
 }
 
-.logo #p1{
+.nav-header__logo #p1{
     color: #EC7979;
     background-color: transparent;
 }
 
 
 
-nav{
+.nav-header__nav{
     display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: space-between;
     margin: 0;
-
-
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     background-color: inherit;
-    position: relative;
-    max-width: 489px;
-    height: 20px;
-    bottom: 9px;
-    left: 693px;
+    width: 479px;
 
 }
 
-nav >* {
+.nav-header__nav >* {
     margin: 0;
     background-color: inherit;
     font-family: "Open Sans", Arial, sans-serif;
@@ -89,7 +83,7 @@ nav >* {
     color: rgba(255, 255, 255, 0.7)
 }
 
-nav >*:hover {
+.nav-header__nav >*:hover {
     color: #EC7979;
 }
 
@@ -98,43 +92,55 @@ nav >*:hover {
 
 .main-background{
     margin: auto;
-
     width: 100%;
     height: 600px;
-
     background: url("../images/background-1.jpg");
 }
+
+.main__container{
+    display:flex;
+    margin: 0 auto 101px;
+    max-width: 1180px;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.visually-hidden{
+    display: none;
+}
+
+
 
 .main-background__mask{
     height: 600px;
     background: rgba(0, 0, 0, 0.45);
 }
 
-.main-logo{
-    position: relative;
-    top: 108px;
+.main__info{
+    display: block;
+    width: 550px;
+    margin: 0;
+}
+
+.main__logo{
+    display: inline-block;
+    margin-top: 108px;
 
     font-family: Roboto, Arial, sans-serif;
-    font-style: normal;
-    font-weight: normal;
     font-size: 60px;
     line-height: 70px;
-
     color: #FFFFFF;
 }
 
-.main-logo #p2{
+.main__logo #p2{
     color: #EC7979;
     background-color: transparent;
 }
 
-.main-hero {
+.main__hero {
     display: block;
-    position:relative;
     width: 544px;
-    top: 141px;
-
-    margin-left:0;
+    margin-top: 32px;
 
     font-family: Raleway, Arial, sans-serif;
     font-size: 36px;
@@ -143,7 +149,7 @@ nav >*:hover {
     color: #FFFFFF;
 }
 
-.main-hero::after{
+.main__hero::after{
     content: '';
     display: block;
     width: 64px;
@@ -151,12 +157,11 @@ nav >*:hover {
     border-bottom: 1px solid #FFFFFF;
 }
 
-.main-text{
-    margin: 0;
-    position: relative;
+.main__text{
+    display: block;
     width: 282px;
+    margin: 32px 0 0;
 
-    top: 174px;
 
     font-family: Raleway, Arial, sans-serif;
     font-weight: 300;
@@ -166,30 +171,26 @@ nav >*:hover {
     color: rgba(255, 255, 255, 0.8)
 }
 
-.main-download{
-    background-color: Transparent;
-    background-repeat:no-repeat;
+.main__download{
     display: block;
-    margin: 0;
-    position: relative;
-    top: 230px;
+    margin: 40px 0 0;
     width: 135px;
     height: 42px;
-
 
     font-family: "Open Sans", Arial, sans-serif;
     font-size: 15px;
     line-height: 20px;
     text-align: center;
 
+    background-color: Transparent;
+    background-repeat:no-repeat;
     color: #FFFFFF;
-
     border: 1px solid #FFFFFF;
     box-sizing: border-box;
     transition: color 0.5s ease;
 }
 
-.main-download:hover{
+.main__download:hover{
     transform: scale(1.05);
     color: #EC7979;
     border: 1px solid #EC7979;
@@ -198,23 +199,16 @@ nav >*:hover {
 
 /*--------------REGISTR-CONTAINER IN-MAIN--------------*/
 
-.registr {
-    margin: 0;
+.main__registr {
+    margin: 110px 0 0;
     display: block;
-
     max-width: 370px;
     height: 370px;
-
-    position: relative;
-    left: 809px;
-    bottom:154px;
-
-
     background: #FFFFFF;
     border-radius: 8px;
 }
 
-.registr-logo{
+.registr__logo{
     display: block;
     text-align: center;
     height: 56px;
@@ -916,7 +910,7 @@ td{
 
 .contactus__main-container{
     display: flex;
-    margin: 80px auto 110px;
+    margin: 80px auto 44px;
     max-width: 1180px;
     align-items: center;
     flex-direction: column;
@@ -954,7 +948,64 @@ td{
 .contactus__data-container{
     margin-top: 65px;
     display: flex;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
 }
 
+.contactus__personal{
+    display: block;
+    width: 478px;
+    margin: 0;
+}
+
+.contactus__personal > label{
+    display: block;
+    width:100%;
+    padding: 32px 0;
+    border-bottom: 1px solid #BDBDBD;
+}
+
+.contactus__msg{
+    display: block;
+    width: 478px;
+    height: 261px;
+    margin:0 0 0 auto;
+}
+
+
+.contactus__txt{
+    display: block;
+    padding-top: 32px;
+    width:100%;
+    height: 261px;
+    border: none;
+    border-bottom: 1px solid #BDBDBD;
+}
+
+
+.contactus__button{
+    background-color: #EC7979;
+
+    margin-top: 69px;
+
+    padding: 11px 27px 11px 25px;
+
+    font-family: "Open Sans", Arial, sans-serif;
+
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    border: 1px solid #FFFFFF;
+    border-radius: 3px;
+    box-sizing: border-box;
+
+    transition: color 0.5s ease;
+}
+
+.contactus__button:hover{
+    transform: scale(1.05);
+}
